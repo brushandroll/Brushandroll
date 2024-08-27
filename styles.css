@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +8,11 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
 }
@@ -29,7 +30,7 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -40,6 +41,10 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff7f50; /* Changes the hover color for links */
 }
 
 .contact-info {
@@ -61,7 +66,7 @@ nav ul li a {
 }
 
 .hero {
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     padding: 2rem 0;
     text-align: center;
 }
@@ -75,28 +80,33 @@ nav ul li a {
 }
 
 .btn {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.services {
-    padding: 2rem 0;
-    text-align: center;
+.btn:hover {
+    background-color: #ff4500; /* Add a hover effect */
 }
 
-.services h2 {
+.services, .contact {
+    padding: 3rem 0; /* Increased padding for separation */
+}
+
+.services h2, .contact h2 {
     margin-bottom: 1rem;
 }
 
 .service-item {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .contact {
-    padding: 2rem 0;
+    background-color: #f9f9f9; /* Slight background change for the contact section */
+    border-top: 2px solid #333; /* Add a border for distinction */
 }
 
 .contact form {
@@ -109,8 +119,7 @@ nav ul li a {
     margin: 0.5rem 0 0.2rem;
 }
 
-.contact input,
-.contact textarea {
+.contact input, .contact textarea {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -118,21 +127,8 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.contact button {
-    background: #333;
-    color: #fff;
-    padding: 0.7rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background: #555;
-}
-
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -144,6 +140,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header .container, .container {
+        width: 100%;
+    }
+
     nav ul {
         text-align: center;
     }
