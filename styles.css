@@ -139,37 +139,39 @@ footer {
     margin: auto;
 }
 
-/* Additional styling specific to the consultation page */
 .consultation-form {
     background-color: #fff;
     padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .consultation-form h2 {
     text-align: center;
     color: #333;
+    margin-bottom: 1.5rem;
 }
 
 .consultation-form form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     max-width: 600px;
     margin: auto;
 }
 
 .consultation-form label {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     font-weight: bold;
     color: #555;
 }
 
 .consultation-form input, .consultation-form textarea {
     padding: 0.8rem;
-    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background: #f8f8f8;
 }
 
 .consultation-form button {
@@ -185,6 +187,7 @@ footer {
 .consultation-form button:hover {
     background-color: #4a54e1;
 }
+
 
 
 @media (max-width: 768px) {
