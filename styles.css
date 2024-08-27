@@ -139,6 +139,54 @@ footer {
     margin: auto;
 }
 
+/* Additional styling specific to the consultation page */
+.consultation-form {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.consultation-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.consultation-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+.consultation-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.consultation-form input, .consultation-form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.consultation-form button {
+    background-color: #5c67f2;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.consultation-form button:hover {
+    background-color: #4a54e1;
+}
+
+
 @media (max-width: 768px) {
     header .container, .container {
         width: 100%;
