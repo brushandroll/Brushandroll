@@ -45,7 +45,7 @@ nav ul li a {
 
 .hero {
     background-color: #fff;
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
@@ -75,35 +75,44 @@ nav ul li a {
     background-color: #4a54e1;
 }
 
-.services {
+.services, .portfolio, .contact-info {
     padding: 2rem 0;
-    text-align: center;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
-}
-
-.services h2 {
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.service-item {
-    margin-bottom: 1rem;
-    color: #555;
-}
-
-.contact-info {
-    background-color: #fff;
-    padding: 2rem;
-    margin-top: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.contact-info h2 {
+.services h2, .portfolio h2, .contact-info h2 {
     margin-bottom: 1.5rem;
     color: #333;
+}
+
+.service-item, .portfolio-item {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.service-item img, .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin: 10px;
+    width: calc(33.333% - 20px);
+}
+
+.portfolio-item p {
+    color: #555;
+    font-size: 1rem;
 }
 
 .contact-info p {
@@ -147,5 +156,19 @@ footer {
     nav ul li {
         display: block;
         margin: 0.5rem 0;
+    }
+
+    .portfolio-item {
+        width: calc(50% - 20px);
+    }
+
+    .service-item img, .portfolio-item img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        width: 100%;
     }
 }
