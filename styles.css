@@ -93,9 +93,39 @@ nav ul li a {
     text-align: center;
 }
 
-.service-item img, .portfolio-item img {
-    max-width: 100%;
+/* Image settings for service items */
+.service-item img {
+    width: 100%;
     height: auto;
+    max-width: 350px; /* Appropriate width for service images */
+    max-height: 250px; /* Appropriate height for service images */
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Portfolio Image settings for first three images */
+.portfolio-item:first-child img, 
+.portfolio-item:nth-child(2) img, 
+.portfolio-item:nth-child(3) img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Adjusted width for first three portfolio images */
+    max-height: 200px; /* Adjusted height for first three portfolio images */
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Portfolio Image settings for last three images */
+.portfolio-item:nth-child(4) img, 
+.portfolio-item:nth-child(5) img, 
+.portfolio-item:nth-child(6) img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Adjusted width for last three portfolio images */
+    max-height: 180px; /* Adjusted height for last three portfolio images */
+    object-fit: cover;
     margin-bottom: 1rem;
     border-radius: 8px;
 }
@@ -160,17 +190,18 @@ footer {
     }
 
     .portfolio-item {
-        width: calc(50% - 20px);
+        width: calc(50% - 20px); /* Adjust image width for tablet screens */
     }
 
     .service-item img, .portfolio-item img {
-        width: 100%;
+        max-width: 100%; /* Allow images to resize for smaller screens */
+        max-height: auto;
     }
 }
 
 @media (max-width: 480px) {
     .portfolio-item {
-        width: 100%;
+        width: 100%; /* Full width for mobile screens */
     }
 
     .hero {
